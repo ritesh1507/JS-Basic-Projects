@@ -1,0 +1,22 @@
+#count{
+    background-color: #deedff;
+    display: block;
+    height: 80px;    
+    margin-top: 2em;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+}
+#lowerDiv{
+    display: flex; 
+    column-gap: 15px;
+    position: absolute; 
+    margin-top: 2.2em;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+button{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
