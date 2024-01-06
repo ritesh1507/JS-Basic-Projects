@@ -1,0 +1,66 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    text-align: center;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#result{
+    margin-top: 300px;
+    height:50px;
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    margin-top: 70px;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(220, 218, 255);
+}
+
+#guessLabel{
+    padding-top: 25px;
+}
+
+#guessText{
+    border-width: 2px;
+    width: 50px;
+    text-align: center;
+    outline: none;
+}
+
+#submit{
+    background-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 2px rgb(148, 145, 145);
+}
+#submit:active{
+    transform: translateY(2px);
+    box-shadow: 0 0;
+}
+
+#celebrate{
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+}
