@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    background-color: rgb(247, 240, 222);
+}
+#container{
+    height: 110px;
+    margin-top: 150px;
+    background-color: rgba(107, 148, 171, 0.747);
+}
+
+#clock{
+    position: absolute;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 110px;
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgba(103, 195, 134, 0.918);
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 10px -10px rgba(107, 148, 171, 0.747),20px -20px rgba(107, 126, 144, 0.771);
+}
