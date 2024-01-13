@@ -31,7 +31,7 @@ play.addEventListener('click',function(){
     document.querySelectorAll('img').forEach(function(img){
         img.style.opacity="1";
     })
-    // console.log(playerChoice);
+    console.log(playerChoice);
     document.getElementById("user").src="image/"+playerChoice+".png";
     document.getElementById("cpu").src="image/"+computerChoice+".png";
     if(playerChoice===computerChoice){
