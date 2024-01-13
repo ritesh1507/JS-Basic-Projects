@@ -18,6 +18,7 @@ function home (){
             })
             image.style.opacity="1";
             playerChoice=image.id;
+            console.log(playerChoice)
         })
     })
 }
@@ -30,7 +31,7 @@ play.addEventListener('click',function(){
     document.querySelectorAll('img').forEach(function(img){
         img.style.opacity="1";
     })
-    // console.log(computerChoice);
+    // console.log(playerChoice);
     document.getElementById("user").src="image/"+playerChoice+".png";
     document.getElementById("cpu").src="image/"+computerChoice+".png";
     if(playerChoice===computerChoice){
@@ -41,7 +42,7 @@ play.addEventListener('click',function(){
         counterCpu++;
         document.getElementById("cpuScore").value=counterCpu;
     }
-    else if((playerChoice==="rock" && computerChoice==="scissor")||(playerChoice==="paper" && computerChoice==="rock")||(playerChoice==="scissor" && computerChoice==="rock")){
+    else if((playerChoice==="rock" && computerChoice==="scissor")||(playerChoice==="paper" && computerChoice==="rock")||(playerChoice==="scissor" && computerChoice==="paper")){
         document.getElementById("display").innerHTML="You Won!!";
         counterUser++;
         document.getElementById("userScore").value=counterUser;
@@ -55,7 +56,7 @@ document.getElementById("playAgain").addEventListener('click',function(){
 
 function cpuChoice(){
     let choice=Math.floor(Math.random()*3);
-    console.log(`cpu choice ${choice}`);
+    console.log(`cpu choice ${images[choice].id}`);
     return images[choice].id;
 }
 
