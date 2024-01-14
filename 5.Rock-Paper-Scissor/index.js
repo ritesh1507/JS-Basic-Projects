@@ -1,7 +1,7 @@
 let playerChoice;
 let computerChoice;
 let images=document.querySelectorAll('img');
-let play=document.getElementById("play");
+let play=document.getElementById("btn-play");
 // let playAgain=document.getElementById("playAgain");
 let counterUser=0;
 let counterCpu=0;
@@ -34,6 +34,23 @@ play.addEventListener('click',function(){
     console.log(playerChoice);
     document.getElementById("user").src="image/"+playerChoice+".png";
     document.getElementById("cpu").src="image/"+computerChoice+".png";
+    document.getElementById("display").innerHTML="";
+    setTimeout(function(){
+        showScore();
+    },2000);
+})
+
+document.getElementById("btn-playagain").addEventListener('click',function(){
+    home();
+})
+
+function cpuChoice(){
+    let choice=Math.floor(Math.random()*3);
+    console.log(`cpu choice ${images[choice].id}`);
+    return images[choice].id;
+}
+
+function showScore(){
     if(playerChoice===computerChoice){
         document.getElementById("display").innerHTML="Its a Draw!!"
     }
@@ -47,17 +64,6 @@ play.addEventListener('click',function(){
         counterUser++;
         document.getElementById("userScore").value=counterUser;
     }
-    
-
-})
-document.getElementById("playAgain").addEventListener('click',function(){
-    home();
-})
-
-function cpuChoice(){
-    let choice=Math.floor(Math.random()*3);
-    console.log(`cpu choice ${images[choice].id}`);
-    return images[choice].id;
 }
 
 
