@@ -104,6 +104,7 @@ img{
     height: 100%;
     width: 25%;
     background-color: rgb(104, 144, 255);
+    border-radius: 0 3rem 3rem 0;
 }
 
 #right-wall{
@@ -116,6 +117,8 @@ img{
     height:100%;
     width: 25%;
     background-color: rgb(104, 144, 255);
+    border-radius: 3rem 0 0 3rem;
+
 }
 
 #user{
@@ -124,7 +127,7 @@ img{
     /* width: 25%; */
     z-index: -1;
     top: 30%;
-    right: 10%;
+    right: 11%;
     animation: forward1 2s ease-in-out 1 forwards;
 }
 
@@ -200,6 +203,9 @@ img{
     }
     #new-container{
         height: 15rem;
+    }
+    #score{
+        font-size: small;
     }
 }
 
