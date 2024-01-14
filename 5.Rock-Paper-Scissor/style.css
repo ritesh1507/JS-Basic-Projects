@@ -65,11 +65,15 @@ img{
     cursor: pointer;
     background-color: rgb(181, 241, 255);
 }
-#btn:hover{
+#btn-play:hover{
     background-color: aliceblue;
 }
 
 #btn-playagain{
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
     height: 40px;
     width: 100px;
     font-size: large;
@@ -86,16 +90,18 @@ img{
 
 #new-container{
     display: none;
+    position: relative;
     /* margin-top: 100px; */
     width: 100%;
+    height: 15rem;
 }
 
 #left-wall{
-    /* position: absolute; */
+    position: absolute;
     display: flex;
     justify-content: center;
     text-align: center;
-    height:400px;
+    height: 100%;
     width: 25%;
     background-color: rgb(104, 144, 255);
 }
@@ -106,28 +112,29 @@ img{
     display: flex;
     justify-content: center;
     right: 0px;
-    transform: translateY(-400px);
-    height:400px;
+    /* transform: translateY(-400px); */
+    height:100%;
     width: 25%;
     background-color: rgb(104, 144, 255);
 }
 
 #user{
-    position: relative;
-    height: 70%;
-    width: 30%;
+    position: absolute;
+    height: 100%;
+    /* width: 10%; */
     z-index: -1;
     top: 15%;
+    right: 25%;
     animation: forward1 2s ease-in-out 1 forwards;
 }
 
 #cpu{
     position: absolute;
-    height: 38%;
+    height: 100%;
     z-index: -1;
-    width: 7%;
-    top: 16%;
-    right: 10%;
+    /* width: 10%; */
+    top: 15%;
+    left: 25%;
     animation: forward2 2s ease-in-out 1 forwards;
 }
 
@@ -172,10 +179,23 @@ img{
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: xx-large;
+    font-size: x-large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:hsl(13, 100%, 74%);
     font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    #user {
+        height: 50%;
+        width: 50%;
+        top: 30%;
+    }
+    #cpu{
+        height: 50%;
+        width: 50%;
+        top: 30%;
+    }
 }
 
 @keyframes slidein{

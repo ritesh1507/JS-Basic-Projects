@@ -29,7 +29,7 @@ function home (){
 play.addEventListener('click',function(){
     document.getElementById("top-container").style.display="none";
     document.getElementById("play").style.display="none";
-    document.getElementById("new-container").style.display="block";
+    document.getElementById("new-container").style.display="flex";
     computerChoice = cpuChoice();
     document.querySelectorAll('img').forEach(function(img){
         img.style.opacity="1";
@@ -68,6 +68,3 @@ function showScore(){
         document.getElementById("userScore").value=counterUser;
     }
 }
-
-
-
