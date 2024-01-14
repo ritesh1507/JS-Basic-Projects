@@ -187,14 +187,16 @@ img{
 
 @media screen and (max-width: 768px) {
     #user {
-        height: 50%;
+        height: 40%;
         width: 50%;
         top: 30%;
+        right: 40%;
     }
     #cpu{
-        height: 50%;
+        height: 40%;
         width: 50%;
         top: 30%;
+        left: 40%;
     }
     #new-container{
         height: 15rem;
