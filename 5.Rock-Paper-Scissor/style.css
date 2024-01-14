@@ -145,7 +145,7 @@ img{
     height: 40px;
     font-size: xx-large;
     text-align: center;
-    font-family: monospace;
+    font-family: 'Lato', sans-serif;
     font-weight: 600;
     border-width: 3px;
     border-radius: 25%;
@@ -159,7 +159,7 @@ img{
     height: 40px;
     font-size: xx-large;
     text-align: center;
-    font-family: monospace;
+    font-family: 'Lato', sans-serif;
     font-weight: 600;
     border-width: 3px;
     border-radius: 25%;

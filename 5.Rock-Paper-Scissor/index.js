@@ -5,6 +5,9 @@ let play=document.getElementById("btn-play");
 // let playAgain=document.getElementById("playAgain");
 let counterUser=0;
 let counterCpu=0;
+document.getElementById("cpuScore").value=0;
+document.getElementById("userScore").value=0;
+
 home();
 function home (){
     document.getElementById("top-container").style.display="block";
