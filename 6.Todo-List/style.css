@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(255, 222, 246);
+}
+
+#display{
+    background-color: rgb(159, 178, 253);
+    /* display: flex;
+    flex-flow: row wrap;
+    column-gap:30%;
+    justify-content: space-around; */
+    margin: 5% 20%;
+    padding: 5px 0px 5px 0px;
+    border-radius: 15px;
+}
+
+#container-top{
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+#display-rows{
+    margin: 1% 5% 1% 0%;
+    display: grid;
+    grid-template-columns: 10% 80% 80%;
+    /* grid-column: 1; */
+    /* column-gap: 30%; */
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#task{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: larger;
+}
+
+#date{
+    transform: translateY(3px);
+}
+
+#text1{
+    height: 25px;
+    text-align: center;
+}
+
+#add,#clear{
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+}
+#add{
+    background-color: rgb(177, 255, 159);
+    box-shadow: 0 2px 0 0 rgb(25, 129, 53);
+}
+#clear{
+    background-color:rgb(159, 218, 255) ;
+    box-shadow: 0 2px 0 0 rgb(19, 106, 140);
+}
+#add:active, #clear:active{
+    cursor: pointer;
+    transform: translateY(2px);
+    box-shadow: 0 0;
+}
+
+#date-time{
+    margin-left: 10px;
+    height: 25px;
+}
+
+#delete{
+    border-radius: 5px;
+    width: 4rem;
+    height:1.5rem;
+    background-color: rgba(255, 99, 99, 0.901);
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(109, 12, 25);
+    font-size: .8rem;
+}
+#delete:hover{
+    cursor: pointer;
+}
+
+hr{
+    border-style: none;
+    transform: translateY(-5px);
+    border-top-style:dashed;
+    border-color: #ffffff;
+    border-width: 2px;
+    width: 15%;
+    opacity: 0.5;
+}
+
+input[type="checkbox"] {
+    accent-color: rgba(111, 239, 111, 0.873);
+  }
