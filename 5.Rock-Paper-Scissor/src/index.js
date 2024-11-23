@@ -1,6 +1,8 @@
-import {inject} from "@vercel/analytics"
+import {inject} from "@vercel/analytics";
 
-inject()
+inject({
+    debug :false,
+});
 let playerChoice;
 let computerChoice;
 let images=document.querySelectorAll('img');
@@ -24,7 +26,6 @@ function home (){
             })
             image.style.opacity="1";
             playerChoice=image.id;
-            console.log(playerChoice)
         })
     })
 }
@@ -37,7 +38,7 @@ play.addEventListener('click',function(){
     document.querySelectorAll('img').forEach(function(img){
         img.style.opacity="1";
     })
-    console.log(playerChoice);
+    console.log(`your choice ${playerChoice}`);
     document.getElementById("user").src="image/"+playerChoice+".png";
     document.getElementById("cpu").src="image/"+computerChoice+".png";
     document.getElementById("display").innerHTML="";
