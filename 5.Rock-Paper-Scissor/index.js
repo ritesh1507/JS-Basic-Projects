@@ -1,3 +1,6 @@
+import {inject} from "@vercel/analytics"
+
+inject()
 let playerChoice;
 let computerChoice;
 let images=document.querySelectorAll('img');
